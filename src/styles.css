@@ -1,5 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* this is for the navbar */
 .navstyles{
     display:flex ;
     background-color: blue;
     justify-content: space-between;
 }
+
+/* for styling the button */
+.firstbutton {
+    background-color: yellow;
+    width: 200px;
+    border: 9px solid bl;
+  }
+
+  /* about first row */
+  .rowone, .rowtwo, .rowthree, .rowfour {
+    min-height: 70vh;
+    margin-top: 50px;
+  }
+
+  .leftaboutone {
+      min-height: 50vh;
+  }
+
+  .leftaboutone p{
+    font-size: 18px;
+  }
+
+  .rightaboutone {
+    min-height: 67vh;
+    background-color: red;
+}
+
+.aboutbuttonone {
+    width: 150px;
+    height: 40px;
+    margin-top: 30PX;
+    border-radius: 10px;
+}
+
+/* for the second row in about page */
+.rightabouttwo {
+    min-height: 57vh;
+    background-color: red;
+}
+
+.lastimage {
+    min-height: 60vh;
+    background-color: red;
+    margin-top: 20px;
+}
+
+/* this is for editing the paragraph in about page */
+
+.abouttext {
+    font-size: 18px;
+}
+
+
+/* for contact us page */
+.contact-data input {
+    display: block;
+    width: 60%;
+    min-height: 40px;
+    margin-top: 20px;
+    border-radius: 9px;
+    border: 1px solid gray;
+    background: rgb(232, 248, 243);
+}
+
+.contact-data input:hover {
+    border: 3px solid rgb(50, 161, 205);
+    box-shadow: 6px 5px 10px;
+}
+
+textarea {
+    margin-top: 30px;
+    width: 80%;
+    min-height: 20vh;
+    background: rgb(232, 248, 243);
+}
+
+
+/* footer section */
+
+footer{
+    background-color: rgb(11, 15, 63);
+    min-height: 48vh;
+    color: white;
+}
+
+footer p:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.footer{
+    min-height: 35vh;
+    margin-top: 50px;
+}
+
+.footlogo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footlogo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footlogo img:hover{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:425px){
+    .footer p,.footer h3 {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* login section */
+
+.form {
+	width: 300px;
+	padding: 30px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background: rgba(0, 0, 0, 0.7);
+text-align: center;
+}
+
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.blue
+{
+	border: 3px solid blue;
+	background: no;
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 10px;
+	width: 220px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25px;
+}
+
+.blue:hover {
+	border: 3px solid red;
+}
+
+#blue:hover {
+border: 3px solid green;
+
+
+}
+
+#blue
+{
+border: 3px solid yellow;
+	background: no;
+	display: block;
+	background: rgba(0, 0, 0, 0.7);
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 10px;
+	width: 120px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25px;	
+}
+
+
+/* sign up section */
+.signup {
+    background-color: #70bdd0;
+    width: 100%;
+    padding: 30px;
+    min-height: 93vh;
+}
+
+.signup input {
+    width: 80%;
+    background: rgb(201, 235, 241);
+}
+
+.radiobox {
+    display: flex;
+}
+
+.radiobox input{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding-left: 30px;
+}
+
+.signup-row{
+    margin:20px 0px 30px 0px;
+}
+
+.signbutt {
+    width: 200px;
+    background-color: rgb(63, 63, 236);
+    color: white;
+    margin-top: 20px;
+    border-radius: 29px;
+    border: 1px solid white;
+    box-shadow: 2px 7px 5px black;
+}
+.signup-row img {
+    width: 100%;
+    min-height: 93vh;
+}
+
+.signup label {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+

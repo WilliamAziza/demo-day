@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { images } from './images';
-import Login from './login';
+//import Login from './login';
+import "../styles.css";
+import { Container } from 'react-bootstrap';
+
 
 const Navbar = () => {
     return (
 
         <>
+        <Container>
             <nav class="navbar navbar-expand-lg navstyles">
                <div>
                 <img src={images.logo} alt=""  height='60px'/>
@@ -45,6 +49,7 @@ const Navbar = () => {
                 </div>
 
             </nav>
+            </Container>
         </>
 
     );

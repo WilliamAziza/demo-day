@@ -5,7 +5,7 @@ const ContactDetails = () => {
     const {id} = useParams()
     return (
         <div key={id}>
-            <p>jsgs</p>
+            <p>Contact</p>
         </div>
     );
 }

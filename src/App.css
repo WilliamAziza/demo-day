@@ -1,0 +1,11 @@
+
+.navstyles{
+  display:flex ;
+  background-color: blue;
+  justify-content: space-between;
+}
+
+.firstbutton {
+  background-color: yellow;
+  width: 200px;
+}

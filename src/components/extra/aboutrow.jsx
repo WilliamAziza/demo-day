@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Row,Col} from 'react-bootstrap';
+
 
 
 const AboutRowOne = ({stile, textstile,imagestile,content,title}) => {

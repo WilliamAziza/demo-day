@@ -7,6 +7,7 @@ import { router } from "./router";
 import { RouterProvider } from "react-router";
 import Foot from "./components/foot";
 
+
 const App = () => {
   return (
     <>

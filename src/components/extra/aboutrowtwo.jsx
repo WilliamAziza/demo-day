@@ -2,7 +2,7 @@ import React from 'react';
 import { Row,Col } from 'react-bootstrap';
 
 
-const Aboutrowtwo = ({stile,imagestile,textstile,content,title}) => {
+const Aboutrowtwo = ({stile,imagestile,textstile,content,title,titletwo}) => {
   return (
     <>
        
@@ -14,6 +14,7 @@ const Aboutrowtwo = ({stile,imagestile,textstile,content,title}) => {
             <Col md='7'>
             <h3>{title}</h3>
                 <div className={textstile}>
+                  <h4>{titletwo}</h4>
                  <p>{content}</p>
                 </div>
             </Col>

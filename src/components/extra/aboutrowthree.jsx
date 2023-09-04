@@ -1,24 +1,29 @@
-import React from 'react'
-import { Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Row,Col} from 'react-bootstrap';
 import Butt from './button';
 
-const Aboutrowthree = () => {
-  return (
-    <>
-      <Row className='rowone'>    
-            <Col md='7'>
-            <h3>Our Story</h3>
-                <div className='leftaboutone'>
 
-                </div>
-                <Butt stile='aboutbuttonone' descript='Read More'/>
-            </Col>
+
+
+const AboutRowThree = ({stile, textstile,imagestile,content,buttstile}) => {
+  return (
+
+    <>    
+           <Row className={stile}>    
             <Col md='5'>
-                <div className='rightaboutone'></div>
+            <h1>Find The Best <br/> Fashion Style <br/> For You </h1>
+                <div className={textstile}>
+                   <p>{content}</p>
+                </div>
+                <Butt buttstile={buttstile} descript='Enter'/>
+            </Col>
+            <Col md={{span:5, offset:2}}>
+                <div className={imagestile}></div>
             </Col>
            </Row>
+       
     </>
   )
 }
 
-export default Aboutrowthree;
+export default AboutRowThree;

@@ -1,10 +1,10 @@
 import React from 'react';
-// import "./styles.css";
+//  import "./styles.css";
 
-const Butt = ({stile,descript}) => {
+const Butt = ({buttstile,descript}) => {
   return (
     <>
-    <button className={stile}>{descript}</button> 
+    <button className={buttstile}>{descript}</button> 
     </>
   )
 }

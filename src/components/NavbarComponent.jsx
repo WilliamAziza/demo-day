@@ -1,7 +1,11 @@
 import React from 'react';
 import { images } from './images';
+import { useCart } from './CartContext'; // Import useCart hook
 
-const NavbarComponent = ({ cartCount }) => {
+const NavbarComponent = () => {
+  const { cart } = useCart(); 
+  const cartItemCount = cart.length;
+
   return (
     <div>
       <header>
@@ -20,9 +24,11 @@ const NavbarComponent = ({ cartCount }) => {
             </ul>
           </div>
           <div className="navbar-cart">
-            <img src={images.cart} alt="Cart" />
-            {/* Display the cart count here */}
-            <span className="cart-count">{cartCount}</span>
+            {/* Make the cart icon clickable */}
+            <a href="/cart">
+              <img src={images.cart} alt="Cart" />
+              <span className="cart-count">{cartItemCount}</span> {/* Display cart item count */}
+            </a>
           </div>
         </nav>
       </header>

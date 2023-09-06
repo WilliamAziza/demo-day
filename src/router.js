@@ -8,6 +8,7 @@ import ContactDetails from './components/contactDetails';
 import Products from './components/Products';
 import Login from './components/login';
 import SignUp from './components/signUp';
+import Cart from './components/cart';
 export const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Layout/>}>
@@ -18,6 +19,7 @@ export const router = createBrowserRouter(
                   <Route path='contact/:id' element={<ContactDetails/>}/>
                   <Route path='login' element={<Login/>}/>
                   <Route path='signUp' element={<SignUp/>}/>
+                  <Route path='cart' element={<Cart/>}/>
 
       </Route>
     )

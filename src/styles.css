@@ -241,7 +241,7 @@ border: 3px solid yellow;
     margin-left: 20px;
 }
 
-/* Below is for the home page */
+
 
 .homerowone {
    
@@ -362,4 +362,51 @@ border: 3px solid yellow;
     border: 1px solid blue;
 }
 
-/* clients review */
+/* Navbar Container */
+.navbar {
+    
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:skyblue;
+    padding: 10px 20px;
+    color: black;
+}
+
+/* Logo Styles */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo img {
+    max-height: 50px;
+}
+
+/* Navigation Links */
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    font-size: 16px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Cart Icon */
+.navbar-cart img {
+    max-height: 30px;
+}
+
+
+  

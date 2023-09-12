@@ -1,3 +1,12 @@
+/* fonts */
+/* font-family: 'Rubik Iso', cursive; */
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+  
+  /* font-family: 'Dancing Script', cursive; */
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -408,5 +417,26 @@ border: 3px solid yellow;
     max-height: 30px;
 }
 
+/* for the products page */
+.productcontainer{
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.producthead{
+    text-align: center;
+    color: aqua;
+    font-size: 4rem;
+    margin: 1rem 0px;
+    font-family: 'Dancing Script', cursive,sans-serif;
+}
+
+.card {
+    width: 23%;
+    margin: 10px;
+    box-shadow: 2px 2px 10px black;
+}
   

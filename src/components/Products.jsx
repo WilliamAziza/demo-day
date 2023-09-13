@@ -142,14 +142,114 @@
 
 // export default Products;
 
+
+
+
+
+
+// import {useEffect,useState} from 'react'
+// import axios from 'axios';
+// import { Card, Button } from 'react-bootstrap';
+// import { images } from './images';
+// import { useCart } from './CartContext';
+// import "../styles.css";
+
+// const productAPI = "http://localhost:4000/wears";
+
+
+// const Products = () => {
+//    const [things, setThings] = useState([]);
+
+//   useEffect(() => {
+//     const getproducts = async() => {
+//       const resposnse = await axios.get(productAPI);
+//       // console.log(resposnse);
+//       setThings(resposnse.data)
+//     }
+//     getproducts();
+//   },[]);
+
+//   const { cart, setCart } = useCart();
+
+//    const addToCart = (product) => {
+//      setCart([...cart, product]);
+//    };
+
+//   return (
+//     <>
+//     <h2 className='producthead'>Products</h2>
+//     <div className='productcontainer'>
+//       {things.map((dress) => {
+//         return (
+//           <>
+//           <Card className='card'>
+//              <Card.Img variant="top" src={images.top1}  />
+//              <Card.Body>
+//                <Card.Title>{dress.Title}</Card.Title>
+//                <Card.Text>{dress.price}</Card.Text>
+//                <Button
+//                  variant="primary"
+//                  onClick={() => 
+//                   addToCart({ name: `{dress.Title}`, price: `{dress.price}` })}
+//               >
+//                  Add to Cart
+//                </Button>
+//              </Card.Body>
+//            </Card>
+//           </>
+//         );
+//       })}
+      
+//     </div>
+      
+//     </>
+//   )
+// }
+//''
+// export default Products;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import {useEffect,useState} from 'react'
 import axios from 'axios';
 import { Card, Button } from 'react-bootstrap';
-import { images } from './images';
+// import { images } from './images';
 import { useCart } from './CartContext';
 import "../styles.css";
 
-const productAPI = "http://localhost:4000/wears";
+const productAPI = "https://fakestoreapi.com/products";
+console.log(productAPI)
 
 
 const Products = () => {
@@ -177,11 +277,11 @@ const Products = () => {
       {things.map((dress) => {
         return (
           <>
-          <Card className='card'>
-             <Card.Img variant="top" src={images.top1}  />
+          <Card className='card' key={dress.id}>
+             <Card.Img variant="top" className='cardimage' src={dress.image}/>
              <Card.Body>
-               <Card.Title>{dress.Title}</Card.Title>
-               <Card.Text>{dress.price}</Card.Text>
+               <Card.Title className='cardtitle'>{dress.title}</Card.Title>
+               <Card.Text className='cardprice'>GHC{dress.price}</Card.Text>
                <Button
                  variant="primary"
                  onClick={() => 
@@ -202,3 +302,5 @@ const Products = () => {
 }
 
 export default Products;
+
+

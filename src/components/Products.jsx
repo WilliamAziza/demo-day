@@ -163,7 +163,6 @@
 //   useEffect(() => {
 //     const getproducts = async() => {
 //       const resposnse = await axios.get(productAPI);
-//       // console.log(resposnse);
 //       setThings(resposnse.data)
 //     }
 //     getproducts();
@@ -201,11 +200,9 @@
 //       })}
       
 //     </div>
-      
 //     </>
 //   )
 // }
-//''
 // export default Products;
 
 
@@ -254,12 +251,15 @@ console.log(productAPI)
 
 const Products = () => {
    const [things, setThings] = useState([]);
+   const [loading, setLoading] = useState(true)
+
 
   useEffect(() => {
     const getproducts = async() => {
       const resposnse = await axios.get(productAPI);
       // console.log(resposnse);
       setThings(resposnse.data)
+      setLoading(false);
     }
     getproducts();
   },[]);
@@ -274,6 +274,7 @@ const Products = () => {
     <>
     <h2 className='producthead'>Products</h2>
     <div className='productcontainer'>
+    {loading && <div className='loading'>Loading...</div> }
       {things.map((dress) => {
         return (
           <>

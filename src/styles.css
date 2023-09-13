@@ -454,3 +454,100 @@ border: 3px solid yellow;
     font-size: medium;
     font-weight: bold;
 }
+
+
+/* product details page */
+
+.pdimage {
+    background-color: red;
+    height: 20rem;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.pdothers {
+    height: 20rem;
+    margin-top: 100px;
+}
+
+.cartbutt{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    border: white;
+}
+
+.cartbutt1{
+    border-radius: 10px 0px 0px 10px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    border: white;
+}
+.cartbutt1:hover{
+    background-color: rgb(56, 56, 243);
+    width: 60px;
+}
+.cartbutt2{
+    border-radius: 0px 10px 10px 0px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    margin-top: 15px;
+    border: white;
+}
+.cartbutt2:hover{
+    background-color: rgb(56, 56, 243);
+    width: 60px;
+}
+
+.removecart{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border-color: blue;
+    margin-top: 13px;
+}
+
+
+.removecart:hover{
+    background-color: rgb(54, 54, 245);
+    border-color: white;
+}
+
+.makepurchase {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(92, 92, 241);
+    color: white;
+    border-color: rgb(56, 56, 243);
+    font-weight: bolder;
+}
+
+.makepurchase:hover{
+    background-color: blue;
+    border-color:blue;
+}
+
+.up{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.loading{
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 26rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

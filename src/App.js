@@ -17,7 +17,7 @@ const App = () => {
       <RouterProvider router={router} />
       <Foot />
     </CartProvider>
-  );
+)
 };
 
 export default App;

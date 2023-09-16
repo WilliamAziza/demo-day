@@ -20,7 +20,7 @@ const NavbarComponent = () => {
               <li><a href="/about">About Us</a></li>
               <li><a href="/contact">Contact</a></li>
               <li><a href="/login">Login</a></li>
-              <li><a href="/">Sign Up</a></li>
+              <li><a href="/signUp">Sign Up</a></li>
             </ul>
           </div>
           <div className="navbar-cart">

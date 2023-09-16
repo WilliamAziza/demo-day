@@ -8,9 +8,9 @@ import NavbarComponent from './components/NavbarComponent';
 import { CartProvider } from './components/CartContext'; // Import CartProvider
 
 const App = () => {
-  let p =[1,2,3,4,5,6]
-    let one = p.filter(eachItem=>eachItem===1 )
-    alert(one)
+  // let p =[1,2,3,4,5,6]
+  //   let one = p.filter(eachItem=>eachItem===1 )
+  //   alert(one)
   return (
     <CartProvider> {/* Wrap your app with CartProvider */}
       <NavbarComponent />

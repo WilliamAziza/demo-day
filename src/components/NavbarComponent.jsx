@@ -27,7 +27,7 @@ const NavbarComponent = () => {
             {/* Make the cart icon clickable */}
             <a href="/cart">
               <img src={images.cart} alt="Cart" />
-              <span className="cart-count">{cartItemCount}</span> {/* Display cart item count */}
+              <span className="cart-count">{cartItemCount}</span> 
             </a>
           </div>
         </nav>

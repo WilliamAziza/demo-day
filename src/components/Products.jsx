@@ -251,7 +251,7 @@ console.log(productAPI)
 
 const Products = () => {
    const [things, setThings] = useState([]);
-   const [loading, setLoading] = useState(true)
+   const [loading, setLoading] = useState(true);
 
 
   useEffect(() => {
